@@ -1,0 +1,163 @@
+body {
+  overflow-y: scroll; /* inevitable... skip the jitter */
+  overflow-x: hidden;
+}
+
+.items {
+  margin: 10px;
+  position: relative;
+}
+
+.item {
+  background-color: white;
+  -moz-box-shadow: 0 1px 3px #aaa;
+-ms-box-shadow: 0 1px 3px #aaa;
+-o-box-shadow: 0 1px 3px #aaa;
+-webkit-box-shadow: 0 1px 3px #aaa;
+box-shadow: 0 1px 3px #aaa;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  /*position: absolute;*/
+  z-index: 1;
+}
+
+.item.filtered {
+  opacity: 0;
+  visibility: hidden !important;
+  top: -300px !important; /* Slide photos off top of screen. */
+  left: -300px !important; /* Slide photos off top of screen. */
+}
+
+.degrade .item {
+  -moz-transition: none !important;
+-ms-transition: none !important;
+-o-transition: none !important;
+-webkit-transition: none !important;
+transition: none !important;
+}
+
+.item.hidden {
+  display: none;
+}
+
+.item a,
+.item a:hover,
+.item a:visited {
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+}
+
+.item .thumbnail {
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #eee;
+}
+
+.item .title {
+  bottom: 0px;
+  -moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+-o-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+  height: 30px;
+  left: 10px;
+  overflow: hidden;
+  padding: 0px 10px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.item.comments .title {
+  left: 35px;
+  right: 35px;
+}
+
+.item.ad .title {
+  color: #999;
+}
+
+.item .summary {
+  background-color: white;
+  border: 1px solid #eee;
+  bottom: 40px;
+  color: rgba(51, 51, 51, 1);
+  left: 10px;
+  line-height: 1.4;
+  max-height: 70px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  text-align: justify;
+  text-overflow: ellipsis;
+  visibility: hidden;
+}
+
+/* If we are making things askew */
+
+.askew .item {
+  -moz-transform: rotate(-2deg);
+-ms-transform: rotate(-2deg);
+-o-transform: rotate(-2deg);
+-webkit-transform: rotate(-2deg);
+transform: rotate(-2deg);
+}
+
+/* Rotate all even images 2 degrees */
+.askew .item:nth-child(even)  {
+  -moz-transform: rotate(2deg);
+-ms-transform: rotate(2deg);
+-o-transform: rotate(2deg);
+-webkit-transform: rotate(2deg);
+transform: rotate(2deg);
+}
+
+/* Slightly rotate every third image, but offset its position */
+.askew .item:nth-child(3n) {
+  -moz-transform: rotate(-1deg);
+-ms-transform: rotate(-1deg);
+-o-transform: rotate(-1deg);
+-webkit-transform: rotate(-1deg);
+transform: rotate(-1deg);
+  margin-top: -1px;
+}
+
+/* Rotate every fifth image by 2 degrees and offset it */
+.askew .item:nth-child(5n) {
+  -moz-transform: rotate(2deg);
+-ms-transform: rotate(2deg);
+-o-transform: rotate(2deg);
+-webkit-transform: rotate(2deg);
+transform: rotate(2deg);
+  margin-right: 1px;
+}
+
+/* Keep default rotate for every eighth, but offset it */
+.askew .item:nth-child(8n) {
+  margin-top: 1px;
+  margin-right: 1px;
+}
+
+/* Keep default rotate for every eleventh, but offset it */
+.askew .item:nth-child(11n) {
+  margin-top: 1px;
+  margin-left: -1px;
+}
+
+.askew .item:hover {
+  transform: rotate(0) !important;
+}
+
+
+.space {
+  height: 75px;
+  margin: 0 0 -75px 0;
+}

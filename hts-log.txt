@@ -1,0 +1,20 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 06 Jan 2022 08:53:21 at https://portal.linkaraby.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://portal.linkaraby.com/ -O1 "C:\My Web Sites\linkarabi" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+08:57:50	Error: 	"Not Found" (404) at link https://portal.linkaraby.com/assets/css/owl.video.play.png (from https://portal.linkaraby.com/assets/css/owl.carousel.css)
+08:57:50	Error: 	"Not Found" (404) at link https://portal.linkaraby.com/assets/css/AjaxLoader.gif (from https://portal.linkaraby.com/assets/css/owl.theme.css)
+08:57:51	Error: 	"Not Found" (404) at link https://portal.linkaraby.com/assets/css/icon-close-white.png (from https://portal.linkaraby.com/assets/css/grt-youtube-popup.css)
+08:57:51	Error: 	"Forbidden" (403) at link https://portal.linkaraby.com/assets/logos/ (from https://portal.linkaraby.com/partners)
+09:07:52	Warning: 	Retry after error -4 (No data (connection closed)) at link https://portal.linkaraby.com/banners/855874e0 (from https://portal.linkaraby.com/campaigns?page=7)
+09:07:56	Error: 	"Error when decompressing" (-1) at link https://portal.linkaraby.com/blog/5 (from https://portal.linkaraby.com/blog/5/قياس-أداء-الحملات-التسويقية)
+09:07:56	Error: 	"Error when decompressing" (-1) at link https://portal.linkaraby.com/blog/3 (from https://portal.linkaraby.com/blog/3/تراك-واضح)
+09:07:56	Error: 	"Error when decompressing" (-1) at link https://portal.linkaraby.com/blog/1 (from https://portal.linkaraby.com/blog/1/البحث-عن-منتجات-مناسبة-للتسويق-بالعمولة-في-السوق-السعودي-باستخدام-أداة-جوجل-ترندز)
+09:07:56	Error: 	"Error when decompressing" (-1) at link https://portal.linkaraby.com/blog/2 (from https://portal.linkaraby.com/blog/2/إنشاء-رابط-مباشر-للتسويق-لمنتج-واحد)
+
+HTTrack Website Copier/3.49-2 mirror complete in 14 minutes 36 seconds : 1299 links scanned, 1289 files written (22297085 bytes overall) [16619271 bytes received at 18971 bytes/sec], 9625197 bytes transferred using HTTP compression in 432 files, ratio 32%, 38.6 requests per connection
+(8 errors, 1 warnings, 0 messages)
